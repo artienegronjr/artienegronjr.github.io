@@ -1,0 +1,24 @@
+.resume {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border: 2px solid #0e1525;
+  align-self: flex-start;
+  border-radius: 500px;
+  padding: 1.2rem;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+
+.resume:hover {
+  cursor: pointer;
+  border-color: #fd4766;
+  background-color: #fd4766;
+  color: white;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}

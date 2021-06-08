@@ -1,0 +1,20 @@
+.ticker {
+  overflow: hidden;
+  height: 6rem;
+}
+.ticker .ticker-container { animation: 9s normal infinite running scroll; }
+@keyframes scroll {
+   0%  	{margin-top: 0px;}
+   15% 	{margin-top: 0px;}
+
+   25%  {margin-top: -74pt;}
+   40%  {margin-top: -74pt;}
+   
+   50%  {margin-top: -144pt;}
+   65%  {margin-top: -144pt;}
+
+   75%  {margin-top: -214pt;}
+   90%  {margin-top: -214pt;}
+
+   100% {margin-top: 0px;}
+}
