@@ -1,0 +1,112 @@
+.react-tabs {
+  -webkit-tap-highlight-color: transparent;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.react-tabs__tab-list {
+  border: 1px solid #e6e6e62f;
+  border-radius: 500px;
+  margin: 0 0 10px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+  height: 3rem;
+  width: 30rem;
+}
+
+.react-tabs__tab {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 0.75rem;
+  width: 30%;
+  text-align: center;
+}
+
+.react-tabs__tab--selected {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+  border-radius: 500px;
+}
+
+.react-tabs__tab--disabled {
+  color: GrayText;
+  cursor: default;
+}
+
+.react-tabs__tab:focus {
+  box-shadow: 0 0 5px hsl(208, 99%, 50%);
+  border-color: hsl(208, 99%, 50%);
+  outline: none;
+}
+
+.react-tabs__tab:focus:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  left: -4px;
+  right: -4px;
+  bottom: -5px;
+  background: #fff;
+}
+
+.react-tabs__tab-panel {
+  display: none;
+  margin-top: 1.5rem;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
+
+.experience {
+  margin-bottom: 1rem;
+}
+
+.job-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgba(198, 201, 216, 0.75);
+}
+
+.job-title span {
+  font-weight: 400;
+}
+
+.date {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.85rem;
+  color: var(--color-primary);
+}
+
+.react-tabs__tab-panel ul {
+  color: rgba(198, 201, 216, 0.75);
+  font-size: 1.05rem;
+  font-weight: 600;
+  columns: 2;
+  column-gap: 5rem;
+  list-style-position: inside;
+}
+
+.react-tabs__tab-panel ul li {
+  margin-bottom: 0.7rem;
+}
+
+.react-tabs__tab-panel ul li:nth-child(even) {
+  color: var(--color-primary);
+}
+
+.list-container {
+  width: 100%;
+  display: flex;
+}

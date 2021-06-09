@@ -1,0 +1,51 @@
+.about {
+  background-color: #0e1525;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.about-picture {
+  width: 35%;
+}
+
+.headshot {
+  width: 100%;
+  border-radius: 500px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  padding: 2rem;
+  width: 88%;
+}
+
+.about-intro {
+  font-size: 1.1rem;
+  background: -webkit-linear-gradient(120deg, var(--color-primary) 80%, #7644ff, #1c99fe);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-title {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 0.7rem 0rem;
+}
+
+.about-blurb {
+  color: #c6c9d8;
+  opacity: 0.7;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+}

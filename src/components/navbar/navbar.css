@@ -4,6 +4,12 @@
   width: 100%;
   height: 5rem;
   padding: 0.5rem 1rem 0.2rem 1rem;
+  color: var(--color-secondary);
+  transition-delay: 0s;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  z-index: 100;
 }
 
 .navigation {
@@ -19,14 +25,15 @@
   font-size: 1.2rem;
   font-weight: 500;
   height: 100%;
-  color: #0e1525;
+  color: inherit;
 }
 
 .scroll {
   background-color: #091020;
+  color: white;
 }
 
 .active {
-  color: #fd4766;
-  border-bottom: 0.2rem solid #fd4766;
+  color: var(--color-primary);
+  border-bottom: 0.2rem solid var(--color-primary);
 }

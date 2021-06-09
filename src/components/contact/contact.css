@@ -1,0 +1,22 @@
+.contact-info {
+  align-self: flex-start;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.contact-type {
+  color: rgb(117,117,117);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: right;
+  margin-right: 2rem;
+  justify-self: flex-end;
+}
+
+.contact-value {
+  color: rgba(198,201,216,.75);
+  font-size: 17px;
+  font-weight: 700;
+  
+}

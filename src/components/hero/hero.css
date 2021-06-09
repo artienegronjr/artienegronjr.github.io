@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 57%;
+  /* background-attachment: fixed; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,12 +21,12 @@
   font-size: 4.5rem;
   line-height: 90px;
   font-weight: 900;
-  color: #0e1525;
+  color: var(--color-secondary);
 }
 
 h1.hero-title {
   margin: 0rem;
-  color: #fd4766;
+  color: var(--color-primary);
 }
 
 h1.hero-location {

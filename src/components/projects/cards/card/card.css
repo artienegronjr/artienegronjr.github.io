@@ -1,0 +1,115 @@
+.card {
+  height: 5rem;
+  width: 390px;
+  height: 532px;
+  border-radius: 4%;
+  position: relative;
+  transition: all 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  background: linear-gradient(
+    180deg,
+    rgba(15, 15, 15, 0),
+    rgba(15, 15, 15, 0.75)
+  );
+  transition: all 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+  border-radius: 4%;
+}
+
+.card::before {
+  opacity: 1;
+}
+
+.card::after {
+  opacity: 0;
+  background: linear-gradient(180deg, transparent, var(--color-primary));
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 55px rgba(20, 23, 29, 0.5);
+}
+
+.card:hover:before {
+  opacity: 0;
+}
+
+.card:hover:after {
+  opacity: 1;
+}
+
+.card:hover .card-image {
+  transform: scale(1.1);
+}
+
+.card-image {
+  border-radius: 4%;
+  width: 100%;
+  transition: all 1s ease;
+}
+
+.card-content {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.card-category {
+  color: white;
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.card-title {
+  color: white;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.card-category,
+.card-title {
+  transition: all 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+}
+
+.card:hover .card-content .card-category,
+.card:hover .card-content .card-title {
+  transform: translateY(-62px);
+}
+
+.card-description {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffffb3;
+  position: absolute;
+  bottom: 35px;
+  margin-top: 10px;
+  max-width: 80%;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.1s cubic-bezier(0.05, 0.2, 0.1, 1);
+}
+
+.card:hover .card-content .card-description {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+}

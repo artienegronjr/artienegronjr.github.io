@@ -2,7 +2,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
-  border: 2px solid #0e1525;
+  border: 2px solid var(--color-secondary);
   align-self: flex-start;
   border-radius: 500px;
   padding: 1.2rem;
@@ -14,8 +14,8 @@
 
 .resume:hover {
   cursor: pointer;
-  border-color: #fd4766;
-  background-color: #fd4766;
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
   color: white;
   transition-delay: 0s;
   transition-duration: 0.2s;
