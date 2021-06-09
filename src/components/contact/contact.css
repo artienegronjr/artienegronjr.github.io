@@ -18,5 +18,8 @@
   color: rgba(198,201,216,.75);
   font-size: 17px;
   font-weight: 700;
-  
+}
+
+#contact {
+  height: 100vh;
 }

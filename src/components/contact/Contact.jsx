@@ -3,7 +3,7 @@ import Form from "./form/Form"
 
 export default function Contact() {
   return (
-    <div className="section">
+    <div className="section" id="contact">
       <div className="section-content">
         <h4 className="colorful-heading">get a hold of me</h4>
         <h1 className="section-heading">Contact</h1>

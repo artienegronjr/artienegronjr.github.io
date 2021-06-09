@@ -5,7 +5,7 @@ import Ticker from "./ticker/Ticker"
 
 export default function Hero() {
   return (
-    <div className='hero'  style={{backgroundImage: `url(${background})`}}>
+    <div className='hero'  style={{backgroundImage: `url(${background})`}} id="home">
       <div className='hero-content'>
         <h1 className='hero-name'>I’m Artie Negrón,</h1>
         <Ticker />
