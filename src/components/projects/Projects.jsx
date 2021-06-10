@@ -6,7 +6,7 @@ export default function Projects() {
       <div className="section-content">
         <h4 className="colorful-heading">what I've been working on</h4>
         <h1 className="section-heading">My Latest Projects</h1>
-        <p className="section-description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+        <p className="section-description">My older projects aren't a great representation of what I'm capable of today, so I'm currently in the middle of working on new ones to display! </p>
         <Cards />
       </div>
     </div>
