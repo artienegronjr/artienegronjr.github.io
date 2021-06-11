@@ -21,11 +21,14 @@ function App() {
   });
 
   const handleScroll = () => {
-    const heroSection = appRef.current.childNodes[1];
+    //const heroSection = appRef.current.childNodes[1];
     const aboutSection = appRef.current.childNodes[2];
     const projectsSection = appRef.current.childNodes[3];
     const contactSection = appRef.current.childNodes[4];
     const navbarHeight = appRef.current.childNodes[0].scrollHeight;
+
+    const limit = Math.max( document.body.scrollHeight, document.body.offsetHeight, 
+      document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight) - window.innerHeight;
 
     if (window.scrollY > 20) {
       setHasScrolled(true);
@@ -33,16 +36,16 @@ function App() {
       setHasScrolled(false);
     }
 
-    if (window.scrollY + navbarHeight >= heroSection.offsetTop && window.scrollY + navbarHeight < aboutSection.offsetTop){
+    if (window.scrollY < aboutSection.offsetTop){
       setCurrentSection("hero");
     }
     else if (window.scrollY + navbarHeight >= aboutSection.offsetTop && window.scrollY + navbarHeight < projectsSection.offsetTop){
       setCurrentSection("about");
     }
-    else if (window.scrollY + navbarHeight >= projectsSection.offsetTop && window.scrollY + navbarHeight < contactSection.offsetTop){
+    else if (window.scrollY + navbarHeight >= projectsSection.offsetTop && window.scrollY + navbarHeight < contactSection.offsetTop && window.scrollY < limit){
       setCurrentSection("projects");
     }
-    else if (window.scrollY + navbarHeight >= contactSection.offsetTop){
+    else if (window.scrollY === limit){
       setCurrentSection("contact");
     }
   };

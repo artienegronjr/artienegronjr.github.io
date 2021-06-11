@@ -7,7 +7,7 @@
 
 .contact-type {
   color: rgb(117,117,117);
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 400;
   text-align: right;
   margin-right: 2rem;
@@ -16,10 +16,12 @@
 
 .contact-value {
   color: rgba(198,201,216,.75);
-  font-size: 17px;
+  font-size: 1rem;
   font-weight: 700;
 }
 
-#contact {
-  height: 100vh;
+@media screen and (max-width: 1299px) {
+  .contact-info {
+    align-self: center;
+  }
 }

@@ -6,6 +6,7 @@
 .form form {
   display: flex;
   flex-direction: column;
+  padding-bottom: 5rem;
 }
 
 .form form input,
@@ -50,4 +51,29 @@
   background: transparent;
   border-color: var(--color-primary);
   color: var(--color-primary);
+}
+
+@media screen and (max-width: 1299px) {
+  .form {
+    align-self: center;
+  }
+
+  .submit-btn {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .form form input,
+  .form form textarea {
+    width: 80vw;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .submit-btn {
+    padding: 1rem;
+  }
 }

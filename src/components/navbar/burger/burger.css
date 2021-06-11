@@ -1,0 +1,114 @@
+.burger {
+  display: none;
+  position: relative;
+  height: 100%;
+  width: 6rem;
+  cursor: pointer;
+  margin-left: auto;
+  right: 1.5rem;
+  background: transparent;
+
+}
+
+.burger span {
+  display: block;
+  background: rgb(198, 201, 216);
+  border-radius: 2px;
+  height: 4px;
+  width: 50%;
+  margin: 5px 0;
+  transition: 0.25s ease-in-out;
+}
+
+.main-burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.main-burger span {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.main-burger span:nth-child(1){
+  transition-delay: 0.55s;
+}
+
+.main-burger span:nth-child(2){
+  transition-delay: 0.425s;
+}
+
+.main-burger span:nth-child(3){
+  transition-delay: .30s;
+}
+
+.cross-burger {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.cross-burger span {
+  position: relative;
+  margin: 0;
+  width: 0%;
+  transition: 0.3s ease-in-out;
+}
+
+.cross-burger span:nth-child(1){
+  top: 2px;
+  transform: rotate(45deg);
+}
+
+.cross-burger span:nth-child(2){
+  bottom: 2px;
+  transform: rotate(-45deg);
+}
+
+.burger.open .main-burger span {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.25s ease-in-out;
+}
+
+.burger.open .main-burger span:nth-child(1){
+  transition-delay: 0s;
+}
+
+.burger.open .main-burger span:nth-child(2){
+  transition-delay: 0.125s;
+}
+
+.burger.open .main-burger span:nth-child(3){
+  transition-delay: 0.25s;
+}
+
+.burger.open .cross-burger span {
+  width: 50%;
+  transition: 0.3s ease-in-out;
+  background: rgb(198, 201, 216);
+}
+
+.burger.open .cross-burger span:nth-child(1) {
+  transition-delay: 0.375s;
+}
+
+.burger.open .cross-burger span:nth-child(2) {
+  transition-delay: 0.375s;
+}
+
+@media screen and (max-width: 1300px) {
+  .burger {
+    display: block;
+  }
+}
