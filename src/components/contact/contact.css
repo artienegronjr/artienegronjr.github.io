@@ -25,3 +25,8 @@
     align-self: center;
   }
 }
+
+#contact .section-content {
+  margin-bottom: 0rem;
+  padding-bottom: 0rem;
+}

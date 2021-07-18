@@ -1,5 +1,5 @@
 import "./resume.css"
-import pdf from "../../../files/artie-negron-resume.pdf"
+import pdf from "../../../files/Artie Negron Resume.pdf"
 
 export default function Resume() {
   const handleClick = () => {
